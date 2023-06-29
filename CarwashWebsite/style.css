@@ -1,0 +1,439 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+    Created on : 15 May 2022, 09:28:26
+    Author     : Sfiso
+
+
+
+
+body{
+    position: absolute;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-image: url(homedesign.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background-color: #6699FF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+}
+
+textarea{
+	min-height: 60px;
+        width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+textarea:hover, textarea:valid
+{
+    border-color: #9b59b6;
+}
+
+header
+{
+    background: rgba(0,0,0,0.4);
+   box-shadow: 0 0 5px black; 
+}
+
+#Heading{
+   text-align: center;
+    color: white; 
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+#sidebar{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    left: -20%;
+    background-color: white;
+}
+
+#sidebar li{
+    color: black;
+    font-size:30px;
+    padding: 30px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: white;
+    display: block;
+}
+
+.toggle-btn{
+    position: absolute;
+    left: 105%;
+    top: 15px;
+}
+
+.toggle-btn span{
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    margin: 3px;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+.container .head
+{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    background: linear-gradient(30deg, #1874CD,white);
+}
+
+#sidebar ul li:hover {
+    background: #87CEFF;
+    color: blanchedalmond;
+    letter-spacing: 5px;
+}
+
+.f-detail{
+    font-family: 'Poppins', sans-serif;  
+}
+
+.dabody{
+    display: flex;
+    height: 50vh;  
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.formContainer
+{
+    max-width: 700px;
+    width: 100%;
+    background: linear-gradient(30deg, #1874CD,white);
+    padding: 25px 25px;
+    border-radius: 5px;
+}
+
+.formContainer .title{
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+   font-weight: 500;
+   position: relative;
+}
+
+.formContainer .title:before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+
+.formContainer form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+form .user-details .input-box{
+    margin: 5px 0 0px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .f-detail{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height:35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus, user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+.input-bo
+{
+    border: 1px solid #ccc;
+    font-family: 'Lucida' ,sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    
+}
+
+.btn-submit{
+    height: 40px;
+    margin: 20px 0;
+}
+
+.buttonn
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Console', sans-serif;
+    font-size: 25px;
+    outline: none;
+    box-shadow: 0 0 5px black; 
+    border: none;
+    border-radius: 5px;
+}
+
+.buttonn:hover
+{
+    color: black;
+    background-color: #98FB98;
+    border-radius: 5px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+footer{
+    background: white;
+    height: auto;
+    width:100vw;
+    font: "Open Sans";
+    padding-top: 20px;
+    color: black;
+
+}
+
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px 
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px
+}
+
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #98FB98;
+    box-shadow: 0 0 5px #98FB98; 
+}
+
+.footer-bottom
+{
+    background: wheat;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span
+{
+    font-weight: 200;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .4;
+}
+
+.Slogan
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.Slogan p{
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 100;
+}
+
+.intro
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.intro p{
+    
+    font-size: 35px;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+.intro h2{
+    font-weight: 200;
+  margin-top: 20px;
+}
+
+.intro-table{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.intro-table div{
+    margin: 0 10px
+}
+
+.table-services
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 340px;
+    border-radius: 7px 7px 0 0;
+    overflow:hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-services th{
+    background-color: goldenrod;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-services th, .table-services td{
+    padding: 12px 15px;
+}
+
+.table-services tr
+{
+    border-bottom: 1px solid lightgrey;
+}
+
+.table-services tr:nth-of-type(even){
+    background-color: gainsboro;
+}
+
+.table-services tr:last-of-type
+{
+    border-bottom: 2px solid goldenrod;
+}
+
+.table-services tr:hover
+{
+    color: black;
+    font-weight: bold;
+}
+
+.about-section{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Segoe UI', sans-serif; 
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.row-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.row-gallery img{
+    display: block;
+    width: 220px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.abody{
+    display: flex;
+    height: auto;  
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

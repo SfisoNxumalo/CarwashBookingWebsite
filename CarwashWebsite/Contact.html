@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            
+            function togglemenu()
+            {
+                document.getElementById('sidebar').classList.toggle('active');
+            }
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="sidebar" class="container" onClick="togglemenu()">
+             <div class="toggle-btn">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 
+             </div>
+             <div class="head">Menu</div>
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="AboutUs.html">About us</a></li>
+                <li><a href ="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+       
+        <header>
+            <div id="Heading"> 
+            <h1>Johannes Car Wash</h1>
+        </div>
+        </header>
+       
+       
+       <div class="dabody">
+           
+           <div class="formContainer">
+           
+           <div class="title">Contact Us</div>
+           
+           <form action="contact.php" method="POST">
+               <div class="user-details">
+                   <div class="input-box">
+                       <span class="f-detail">First Name:</span>
+                       <input type="text" name="fname" placeholder="Enter your first name" required>       
+                   </div>
+                   
+                   <div class="input-box">
+                       <span class="f-detail">Last Name:</span>
+                       <input type="text" name="lname" placeholder="Enter your last name" required>          
+                   </div>
+                   
+                   <div class="input-box">
+                       <span class="f-detail">Contact Number:</span>
+                       <input type="text" name="contactNumber" placeholder="Enter your contact number" required>          
+                   </div>
+                   
+                   <div class="input-box">
+                       <span class="f-detail">Email:</span>
+                       <input type="email" name="email" placeholder="Enter your email" required>          
+                   </div>
+                   
+                   <div class="input-box">
+                       <span class="f-detail">Area:</span>
+                       <input type="text" name="area" placeholder="Enter your area" required>          
+                   </div>
+                   
+                   <div class="input-box">
+                       <span class="f-detail">Message:</span> 
+                       <textarea name="message" placeholder="Enter your first name" required></textarea>
+                   </div> 
+                   
+               </div>
+               <div class="input-box">
+                       <span class="f-detail">Please select a valet type:</span>
+                            <select class="input-bo" name="valet" size="1">
+                                <option value="empty"></option>
+                                <option value="full">full</option>
+                                <option value="Interior">Interior</option>
+                                <option value="Exterior">Exterior</option>
+                                <option value="Mini">Mini</option>
+                                <option value="Dulux">Dulux</option>
+                                <option value="Motorcycle Valet">Motorcycle Valet</option>                           
+                            </select>            
+                </div>
+               
+               
+               <div class="btn-submit"> 
+                       <input type="submit" class="buttonn" name="btnSubmit" value="Submit">
+                   </div>
+           </form>
+           
+       </div> 
+       </div>
+       
+       <footer>
+           <div class="footer-content">
+               
+            <h3>Johannes Car Wash</h3>
+            <p><span class="">Email: JohannesCarWash@gmil.com</span></p>
+            <p><span class="">Call: 011 876 8204</span></p>
+            <p><span class="">Address: 1737 nyathi str, Rockville</span></p>
+            
+            <ul class="socials">
+                <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-google"></i></a></li>
+            </ul>
+           </div>
+           <div class="footer-bottom">
+               <p>copyright &COPY;2020 Johannes Car Wash. designed by <span>Sfiso Mawila</span></p>
+           </div>
+           
+       </footer>
+       
+    </body>
+</html>
